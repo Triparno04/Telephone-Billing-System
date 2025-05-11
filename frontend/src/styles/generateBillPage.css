@@ -1,0 +1,77 @@
+.generate-bill-container {
+  padding: 20px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.back-button {
+  background-color: rgba(255, 255, 255, 0.2);
+  border: 1px solid white;
+  color: white;
+  padding: 10px;
+  border-radius: 50%; /* Making it a circle */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.form-container {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background with blur */
+  backdrop-filter: blur(8px); /* Blurring the background */
+  padding: 20px;
+  border-radius: 10px;
+  width: 100%;
+  max-width: 400px;
+  margin-bottom: 20px;
+}
+
+.transparent-dropdown, .transparent-input, .transparent-button {
+  background-color: rgba(255, 255, 255, 0.2); /* Transparent background for the dropdown */
+  color: white; /* Ensuring text color is white */
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid white;
+  border-radius: 5px;
+  width: 100%;
+  backdrop-filter: blur(8px); /* Adding blur effect to the dropdown */
+}
+
+.transparent-dropdown {
+  color: black; /* Ensuring the text inside the dropdown is black */
+  background-color: rgba(255, 255, 255, 0.8); /* Making dropdown background slightly opaque */
+}
+
+.transparent-button {
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.transparent-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}
+
+.bill-details-box {
+  background: rgba(255, 255, 255, 0.1); /* Transparent background with blur */
+  backdrop-filter: blur(8px); /* Blurring the background */
+  padding: 20px;
+  border-radius: 10px;
+  width: fit-content;
+  margin-top: 20px;
+  border: 1px solid white;
+}
+
+.bill-details-box h2 {
+  margin-bottom: 10px;
+}

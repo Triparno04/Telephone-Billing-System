@@ -1,0 +1,139 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url('/assets/pic.jpg');  /* Local image */
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: black;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+nav {
+  background: rgba(255, 255, 255, 0.2); /* transparent white */
+  backdrop-filter: blur(10px);
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+nav h2 {
+  font-family: 'Poppins', sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  color: #F7FFF6;
+  margin: 0;
+}
+
+/* Remove nav ul styles completely since you don't want top buttons */
+nav ul {
+  display: none;
+}
+
+.main-content {
+  flex: 1;  /* This makes sure the content takes available space */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+}
+
+.tablet-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center buttons horizontally */
+  gap: 20px; /* Reduced gap for compact layout */
+  margin-top: 20px;
+}
+
+.tablet-button {
+  width: 150px;
+  height: 250px;
+  border: 3px solid #1D3354;
+  border-radius: 30px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-weight: bold;
+  color: #1D3354;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(8px);
+}
+
+/* On hover, increase blur intensity */
+.tablet-button:hover {
+  background: rgba(220, 239, 249, 0) !important; /* Fully transparent background */
+  backdrop-filter: blur(10px); /* Keep the blur effect */
+  box-shadow: none; /* Remove the box-shadow */
+  color: white; /* Change text color to white on hover */
+}
+
+/* For the 3 buttons on the top row */
+.tablet-buttons .tablet-button:nth-child(1),
+.tablet-buttons .tablet-button:nth-child(2),
+.tablet-buttons .tablet-button:nth-child(3) {
+  flex: 1 1 calc(33.33% - 20px); /* 3 on top row */
+}
+
+/* For the 2 buttons on the bottom row */
+.tablet-buttons .tablet-button:nth-child(4),
+.tablet-buttons .tablet-button:nth-child(5) {
+  flex: 1 1 calc(50% - 20px); /* 2 on bottom row */
+}
+
+
+.footer {
+  background: rgba(255, 255, 255, 0.2);  /* transparent white */
+  backdrop-filter: blur(10px);
+  padding: 15px;
+  color: black;
+  font-weight: bold;
+  font-size: 14px;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+  margin-top: auto;  /* Makes sure it stays at the bottom */
+}
+
+.login-button {
+  padding: 8px 16px;
+  background-color: white;
+  border: 2px solid black;
+  border-radius: 20px;
+  color: black;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+}
+
+.login-button:hover {
+  background: rgba(255, 255, 255, 0.349); /* slight white blur */
+  backdrop-filter: blur(5px);
+  border: 2px solid black;
+  color: black;
+}
+
+.button-label {
+  background: rgba(0, 0, 0, 0.5); /* Dark blur strip */
+  backdrop-filter: blur(4px);
+  color: white;
+  padding: 6px 12px;
+  border-radius: 12px;
+  font-size: 16px;
+  font-weight: bold;
+  z-index: 2;
+  position: relative;
+  text-align: center;
+}

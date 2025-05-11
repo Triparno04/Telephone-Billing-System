@@ -1,0 +1,116 @@
+/* Center the whole table */
+table {
+  margin: 20px auto; /* Center horizontally with some margin */
+  width: 80%; /* Table width */
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.2); /* Half transparent */
+  backdrop-filter: blur(10px); /* Blur effect */
+  color: white; /* Text color white */
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* Style for table headers */
+th, td {
+  padding: 12px 15px;
+  text-align: center;
+}
+
+/* Header row background */
+thead tr {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly different for header */
+}
+
+/* Buttons inside table */
+button {
+  margin: 0 5px;
+  padding: 6px 12px;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: white;
+  color: black;
+}
+
+/* Style the form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+/* Input fields */
+input {
+  padding: 10px;
+  width: 300px;
+  border-radius: 8px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Placeholder color */
+input::placeholder {
+  color: white;
+}
+
+/* Title text */
+h1, h2 {
+  text-align: center;
+  color: white;
+}
+
+.back-button {
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  border: 2px solid black;
+  color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 22px;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 15px; /* slightly down */
+  margin-left: 20px; /* slightly right */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.back-button:hover {
+  background: transparent;
+  color: white;
+  border: 2px solid white;
+}
+
+/* Center the search bar */
+.search-bar {
+  display: flex;
+  justify-content: center;  /* Center align horizontally */
+  margin-bottom: 20px;  /* Add some space below the search bar */
+}
+
+/* Style for the input field inside the search bar */
+.search-bar input {
+  padding: 10px;
+  width: 300px;  /* Width of the search bar */
+  border-radius: 8px;
+  border: 1px solid white;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+}
+
+/* Optional: Placeholder color */
+.search-bar input::placeholder {
+  color: white;
+}

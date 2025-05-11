@@ -1,0 +1,76 @@
+/* Style for the buttons with background images */
+.tablet-button {
+  display: block;
+  text-align: center;
+  color: white;
+  text-decoration: none;
+  padding: 15px 0;
+  margin: 10px 0;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Apply background images for each button */
+.button-home {
+  background-image: url('/assets/button1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.button-customers {
+  background-image: url('/assets/button2.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.button-plans {
+  background-image: url('/assets/button3.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.button-bills {
+  background-image: url('/assets/button4.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.button-generate-bill {
+  background-image: url('/assets/button5.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+/* Text styling for buttons to be visible with blurred background */
+.tablet-button::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4); /* Slightly dark background to make text visible */
+  z-index: 1;
+}
+
+.tablet-button span {
+  position: relative;
+  z-index: 2;
+}
+
+/* Hover effect for buttons */
+.tablet-button:hover {
+  opacity: 0.9;
+}
+
+.button-home,
+.button-customers,
+.button-plans,
+.button-bills,
+.button-generate-bill {
+  backdrop-filter: none !important;
+  background-color: transparent !important;
+}
